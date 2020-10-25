@@ -33,3 +33,9 @@ By default, whenever you bring down the Docker network, your MySQL data will be 
 volumes:
   - ./mysql:/var/lib/mysql
 ```
+
+## Creando una app
+
+Luego de hacer los pasos anteriores (tener el proyecto Laravel en la carpeta src y crear los contenedores) debemos crear el archivo de variables de entorno _.env_ y establecer los parametros correctos.
+
+Despues corremos las migraciones y posteriormente el comando `docker-compose run --rm artisan key:generate` para generar la key necesaria para arrancar la aplicacion web.
