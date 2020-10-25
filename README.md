@@ -38,4 +38,7 @@ volumes:
 
 Luego de hacer los pasos anteriores (tener el proyecto Laravel en la carpeta src y crear los contenedores) debemos crear el archivo de variables de entorno _.env_ y establecer los parametros correctos.
 
-Despues corremos las migraciones y posteriormente el comando `docker-compose run --rm artisan key:generate` para generar la key necesaria para arrancar la aplicacion web.
+Despues corremos las migraciones y posteriormente crear la key necesaria para arrancar la app web.
+
+- `docker-compose run --rm artisan migrate`
+- `docker-compose run --rm artisan key:generate`
